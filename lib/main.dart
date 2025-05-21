@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tracing/trace_bloc.dart';
-import 'package:tracing/trace_screen.dart';
+import 'package:tracing/trace_parabola.dart';
+//import 'package:tracing/trace_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       home: BlocProvider(
         create: (_) => TraceBloc(),
-        child: const TraceScreen(),
+        child: const TraceParabolaScreen(),
       ),
     );
   }
